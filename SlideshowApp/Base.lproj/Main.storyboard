@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food.1" translatesAutoresizingMaskIntoConstraints="NO" id="8Uv-65-ahq" userLabel="food.1">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food.1" translatesAutoresizingMaskIntoConstraints="NO" id="8Uv-65-ahq" userLabel="food.1.jpeg">
                                 <rect key="frame" x="10" y="50" width="394" height="334"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -41,7 +41,6 @@
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="return:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lc0-hF-ci4"/>
-                                    <action selector="slideShowButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oe5-lO-S1w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WF-Wh-oSj">
@@ -73,6 +72,7 @@
                         <outlet property="proeed" destination="aPp-pr-8XS" id="HiY-1h-bst"/>
                         <outlet property="return" destination="2ba-vJ-ooe" id="kTr-DB-QCs"/>
                         <outlet property="startStop" destination="9WF-Wh-oSj" id="0b4-S8-qxl"/>
+                        <outlet property="tapImageStop" destination="Xep-eh-CNE" id="V97-EU-2aV"/>
                         <segue destination="OBR-aP-aqD" kind="show" identifier="subNext" id="q2v-C8-net"/>
                     </connections>
                 </viewController>
@@ -102,10 +102,12 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M62-Pz-u59">
-                                <rect key="frame" x="184" y="389" width="46" height="30"/>
+                                <rect key="frame" x="177" y="380" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="LwV-Lu-pe6"/>
-                                    <constraint firstAttribute="width" constant="46" id="ZAV-qM-f8j"/>
+                                    <constraint firstAttribute="width" secondItem="M62-Pz-u59" secondAttribute="height" multiplier="1:1" id="AKB-lk-YuY"/>
+                                    <constraint firstAttribute="width" constant="60" id="qeO-fZ-dir"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="wl7-kh-Q1x"/>
+                                    <constraint firstAttribute="height" constant="60" id="ytp-ki-UY7"/>
                                 </constraints>
                                 <state key="normal" title="戻る"/>
                                 <connections>
@@ -115,11 +117,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="M62-Pz-u59" firstAttribute="top" secondItem="ny6-ID-vQI" secondAttribute="bottom" constant="53" id="2ap-7A-ST5"/>
+                            <constraint firstItem="M62-Pz-u59" firstAttribute="centerX" secondItem="nff-Xl-gTE" secondAttribute="centerX" id="2Qb-TA-h21"/>
                             <constraint firstItem="ny6-ID-vQI" firstAttribute="leading" secondItem="vvs-gP-wou" secondAttribute="leading" constant="11" id="590-nz-Yee"/>
-                            <constraint firstItem="M62-Pz-u59" firstAttribute="centerX" secondItem="nff-Xl-gTE" secondAttribute="centerX" id="Abz-bu-Jm5"/>
-                            <constraint firstItem="vvs-gP-wou" firstAttribute="trailing" secondItem="M62-Pz-u59" secondAttribute="trailing" constant="184" id="TSR-hn-PsG"/>
-                            <constraint firstItem="M62-Pz-u59" firstAttribute="leading" secondItem="vvs-gP-wou" secondAttribute="leading" constant="184" id="ok5-6d-ebZ"/>
+                            <constraint firstItem="M62-Pz-u59" firstAttribute="top" secondItem="ny6-ID-vQI" secondAttribute="bottom" constant="44" id="5wt-wd-9mF"/>
+                            <constraint firstItem="vvs-gP-wou" firstAttribute="bottom" secondItem="M62-Pz-u59" secondAttribute="bottom" constant="389" id="jrF-Hb-YP6"/>
                             <constraint firstItem="vvs-gP-wou" firstAttribute="trailing" secondItem="ny6-ID-vQI" secondAttribute="trailing" constant="10" id="r4y-wh-zYF"/>
                             <constraint firstItem="ny6-ID-vQI" firstAttribute="top" secondItem="vvs-gP-wou" secondAttribute="top" constant="5" id="rqg-R9-qBf"/>
                         </constraints>

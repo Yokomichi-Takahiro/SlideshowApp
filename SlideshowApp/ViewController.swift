@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBAction func tapImage(_ sender: Any) {
         //segueを使用して画面を遷移
         performSegue(withIdentifier: "subNext", sender: nil)
+        
+    
     }
     
     //　outletの接続
@@ -21,7 +23,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var `return`: UIButton!
     @IBOutlet weak var startStop: UIButton!
     @IBOutlet weak var imageView: UIImageView!
-        
+    @IBOutlet var tapImageStop: UITapGestureRecognizer!
+    
     //配列に指定するIndex番号を宣言
     var nowIndex:Int = 0
    
@@ -29,9 +32,9 @@ class ViewController: UIViewController {
    var timer: Timer!
    // スライドショーさせる画像の配列を宣言
    var imageArray: [UIImage] = [
-       UIImage(named: "food.1")!,
-       UIImage(named: "food.2")!,
-       UIImage(named: "food.3")!,
+       UIImage(named: "food.1.jpeg")!,
+       UIImage(named: "food.2.jpeg")!,
+       UIImage(named: "food.3.jpeg")!,
        ]
        
     // 進むボタンで画像を0~2切り替え
@@ -72,7 +75,7 @@ class ViewController: UIViewController {
         
         
        // 画像読み込み
-         imageView.image = UIImage(named: "food.1")
+         imageView.image = UIImage(named: "food.1.jpeg")
     }
     //再生を押した時の処理
     @IBAction func slideShowButton(_ sender: Any) {
@@ -82,6 +85,9 @@ class ViewController: UIViewController {
             //UIButtonを無効化
            `return`.isEnabled = false
             proeed.isEnabled = false
+            tapImageStop.isEnabled = false
+            
+           
             
             //タイマーをセットする
             timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
@@ -91,6 +97,7 @@ class ViewController: UIViewController {
             //UIButtonを有効化
             proeed.isEnabled = true
             `return`.isEnabled = true
+            tapImageStop.isEnabled = true
             
             //停止の処理を実装
             //タイマーを停止する

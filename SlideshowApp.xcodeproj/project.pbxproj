@@ -14,6 +14,9 @@
 		7B077FA0252831E60057840F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B077F9F252831E60057840F /* Assets.xcassets */; };
 		7B077FA3252831E60057840F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B077FA1252831E60057840F /* LaunchScreen.storyboard */; };
 		7B077FD1252A24160057840F /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B077FD0252A24160057840F /* SubViewController.swift */; };
+		7B078025252D6D770057840F /* food.3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7B078022252D6D770057840F /* food.3.jpeg */; };
+		7B078026252D6D770057840F /* food.2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7B078023252D6D770057840F /* food.2.jpeg */; };
+		7B078027252D6D770057840F /* food.1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7B078024252D6D770057840F /* food.1.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		7B077FA2252831E60057840F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B077FA4252831E60057840F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B077FD0252A24160057840F /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
+		7B078022252D6D770057840F /* food.3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food.3.jpeg; sourceTree = "<group>"; };
+		7B078023252D6D770057840F /* food.2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food.2.jpeg; sourceTree = "<group>"; };
+		7B078024252D6D770057840F /* food.1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food.1.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 				7B077F98252831E30057840F /* SceneDelegate.swift */,
 				7B077F9A252831E30057840F /* ViewController.swift */,
 				7B077FD0252A24160057840F /* SubViewController.swift */,
+				7B078024252D6D770057840F /* food.1.jpeg */,
+				7B078023252D6D770057840F /* food.2.jpeg */,
+				7B078022252D6D770057840F /* food.3.jpeg */,
 				7B077F9C252831E30057840F /* Main.storyboard */,
 				7B077F9F252831E60057840F /* Assets.xcassets */,
 				7B077FA1252831E60057840F /* LaunchScreen.storyboard */,
@@ -128,9 +137,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B078025252D6D770057840F /* food.3.jpeg in Resources */,
 				7B077FA3252831E60057840F /* LaunchScreen.storyboard in Resources */,
 				7B077FA0252831E60057840F /* Assets.xcassets in Resources */,
 				7B077F9E252831E30057840F /* Main.storyboard in Resources */,
+				7B078027252D6D770057840F /* food.1.jpeg in Resources */,
+				7B078026252D6D770057840F /* food.2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
